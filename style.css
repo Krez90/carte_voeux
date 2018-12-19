@@ -30,6 +30,7 @@ footer, header, hgroup, menu, nav, section {
 }
 body {
 	line-height: 1;
+	background-color: #1b2f41;
 }
 ol, ul {
 	list-style: none;
@@ -45,4 +46,193 @@ q:before, q:after {
 table {
 	border-collapse: collapse;
 	border-spacing: 0;
+}
+#Calque_1{
+border-top: 0;
+}
+
+#flocon_x5F_grand, #flocon_x5F_grand_9_, #flocon_x5F_grand_8_, #flocon_x5F_grand_7_,#flocon_x5F_grand_6_, #flocon_x5F_grand_5_, #flocon_x5F_grand_4_, #flocon_x5F_grand_3_, #flocon_x5F_grand_2_, #flocon_x5F_grand_1_,
+#flocon_x5F_moyen, #flocon_x5F_moyen_1_,#flocon_x5F_moyen_2_,#flocon_x5F_moyen_3_,#flocon_x5F_moyen_4_, #flocon_x5F_moyen_5_,#flocon_x5F_moyen_6_,#flocon_x5F_moyen_7_,#flocon_x5F_moyen_8_,#flocon_x5F_moyen_9_,
+#flocon_x5F_petit, #flocon_x5F_petit_1_, #flocon_x5F_petit_2_, #flocon_x5F_petit_3_, #flocon_x5F_petit_4_, #flocon_x5F_petit_5_, 
+#flocon_x5F_petit_6_, #flocon_x5F_petit_7_, #flocon_x5F_petit_8_, #flocon_x5F_petit_9_, #flocon_x5F_petit_10_, #flocon_x5F_petit_11_, 
+#flocon_x5F_petit_12_, #flocon_x5F_petit_13_, #flocon_x5F_petit_14_, #flocon_x5F_petit_15_{
+	position: absolute;
+	height: 100%;
+	width: 100%;
+	top: 0;
+	left: 0;
+}
+
+#flocon_x5F_grand, #flocon_x5F_grand_9_,  #flocon_x5F_grand_8_, #flocon_x5F_grand_7_, #flocon_x5F_grand_6_, #flocon_x5F_grand_5_, #flocon_x5F_grand_4_, #flocon_x5F_grand_3_, #flocon_x5F_grand_2_, #flocon_x5F_grand_1_,
+ #flocon_x5F_moyen, #flocon_x5F_moyen_1_,#flocon_x5F_moyen_2_,#flocon_x5F_moyen_3_,#flocon_x5F_moyen_4_, #flocon_x5F_moyen_5_,#flocon_x5F_moyen_6_,#flocon_x5F_moyen_7_,#flocon_x5F_moyen_8_,#flocon_x5F_moyen_9_,
+ #flocon_x5F_petit, #flocon_x5F_petit_1_, #flocon_x5F_petit_2_, #flocon_x5F_petit_3_, #flocon_x5F_petit_4_, #flocon_x5F_petit_5_, 
+ #flocon_x5F_petit_6_, #flocon_x5F_petit_7_, #flocon_x5F_petit_8_, #flocon_x5F_petit_9_, #flocon_x5F_petit_10_, #flocon_x5F_petit_11_,
+  #flocon_x5F_petit_12_, #flocon_x5F_petit_13_, #flocon_x5F_petit_14_, #flocon_x5F_petit_15_{
+	position: absolute;
+	width: 100%;
+	height: 100%;
+}
+@keyframes fall {
+	
+	100% {
+		transform: translateY(270px);
+	}
+	
+}
+
+#flocon_x5F_grand, #flocon_x5F_grand_9_,  #flocon_x5F_grand_8_,  #flocon_x5F_grand_7_,  #flocon_x5F_grand_6_, #flocon_x5F_grand_5_, #flocon_x5F_grand_4_, #flocon_x5F_grand_3_, #flocon_x5F_grand_2_, #flocon_x5F_grand_1_{
+	will-change: transform;
+	animation: fall 10s infinite linear;
+	
+}
+#flocon_x5F_moyen, #flocon_x5F_moyen_1_,#flocon_x5F_moyen_2_,#flocon_x5F_moyen_3_,#flocon_x5F_moyen_4_, #flocon_x5F_moyen_5_,#flocon_x5F_moyen_6_,#flocon_x5F_moyen_7_,#flocon_x5F_moyen_8_,#flocon_x5F_moyen_9_{
+	will-change: transform;
+	animation: fall 12s infinite linear;
+	
+}
+#flocon_x5F_petit, #flocon_x5F_petit_1_, #flocon_x5F_petit_2_, #flocon_x5F_petit_3_, #flocon_x5F_petit_4_, #flocon_x5F_petit_5_, #flocon_x5F_petit_6_, 
+#flocon_x5F_petit_7_, #flocon_x5F_petit_8_, #flocon_x5F_petit_9_, #flocon_x5F_petit_10_, #flocon_x5F_petit_11_, #flocon_x5F_petit_12_,
+#flocon_x5F_petit_13_, #flocon_x5F_petit_14_, #flocon_x5F_petit_15_{
+	will-change: transform;
+	animation: fall 14s infinite linear;
+	
+}
+#flocon_x5F_grand_6_{
+	animation-delay: 1s;
+}
+
+#flocon_x5F_grand_5_{
+	animation-delay: 1.5;
+}
+
+#flocon_x5F_grand_4_{
+	animation-delay: 2s;
+}
+#flocon_x5F_grand_3_{
+	animation-delay: 2.5s;
+}
+
+#flocon_x5F_grand_2_{
+	animation-delay: 3s;
+}
+
+#flocon_x5F_grand_1_{
+	animation-delay: 3.5s;
+}
+/* fin flocon grand */
+
+#flocon_x5F_moyen{
+	animation-delay: 1s;
+}
+
+#flocon_x5F_moyen_1_{
+	animation-delay: 1.5;
+}
+
+#flocon_x5F_moyen_2_{
+	animation-delay: 2s;
+}
+#flocon_x5F_moyen_3_{
+	animation-delay: 2.5s;
+}
+
+#flocon_x5F_moyen_4_{
+	animation-delay: 3s;
+}
+#flocon_x5F_moyen_8_{
+	animation-delay: 1s;
+}
+/* fin flocon moyen*/
+
+/* debut flocon petit*/
+#flocon_x5F_petit{
+	animation-delay: 0.5s;
+}
+#flocon_x5F_petit_1_{
+	animation-delay: 1s;
+}
+#flocon_x5F_petit_2_{
+	animation-delay: 1.5s;
+}
+#flocon_x5F_petit_3_{
+	animation-delay: 2s;
+}
+#flocon_x5F_petit_4_{
+	animation-delay: 2.5s;
+}
+#flocon_x5F_petit_5_{
+	animation-delay: 3s;
+}
+#flocon_x5F_petit_6_{
+	animation-delay: 3.5s;
+}
+#flocon_x5F_petit_7_{
+	animation-delay: 0.7s;
+}
+#flocon_x5F_petit_8_{
+	animation-delay: 1.14s;
+}
+#flocon_x5F_petit_9_{
+	animation-delay: 2.10s;
+}
+#flocon_x5F_petit_10_{
+	animation-delay: 2.8s;
+}
+#flocon_x5F_petit_11_{
+	animation-delay: 3.5s;
+}
+#flocon_x5F_petit_12_{
+	animation-delay: 0.3s;
+}
+#flocon_x5F_petit_13_{
+	animation-delay: 0.6s;
+}
+#flocon_x5F_petit_14_{
+	animation-delay: 0.9s;
+}
+#flocon_x5F_petit_15_{
+	animation-delay: 1.20s;
+}
+/*fin d'animation flocon*/
+
+/*perenoyel*/
+
+#pere_x5F_noyel{
+	position: absolute;
+	height: 100%;
+	width: 100%;
+	top: 0;
+	left: 0;
+}
+
+#pere_x5F_noyel{
+	position: absolute;
+	width: 100%;
+	height: 100%;
+	
+}
+#pere_x5F_noyel{ 
+	-webkit-transform-origin : 50% 50%;
+	-moz-transform-origin : 50% 50%;
+	-ms-transform-origin : 50% 50%;
+	-o-transform-origin : 50% 50%;
+	transform-origin : 50% 50%;
+	
+	
+   }
+@keyframes perenoyel {
+	0% {
+		transform: translateX(75px);
+	}
+	50% {
+		transform: translateX(-75px);
+		
+	}
+	100%{
+		transform: translateX(75px);
+	}
+}
+#pere_x5F_noyel{
+	animation: perenoyel 10s infinite linear;
+	
 }
