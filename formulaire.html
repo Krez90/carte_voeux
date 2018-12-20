@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <link href="https://fonts.googleapis.com/css?family=Orbitron" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Merriweather|Open+Sans" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Indie+Flower" rel="stylesheet">
+    <title>Les formulaires</title>
+    <meta charset="utf-8">
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <style>
+        label{display: inline-block;min-width: 200px;}
+        </style>
+</head>
+
+<!--Debut du formulaire-->
+<body>
+
+    <form method="post" action="traitement.php" class="form">
+<h1>Pour recevoir votre carte de voeux veuillez remplire le formulaire</h1>
+        <label for='nom'>Entrez votre Nom svp : </label>
+        <input type='text' name='nom' id='nom' maxlength='20' >
+        <span id='missNom'></span><br>
+
+        <label for='mail'>Entrez votre email : </label>
+        <input type='text' name='mail' id='mail' required>
+        <span id="missMail"></span><br>
+  
+        <input type='submit' value='Envoyer' id='bouton_envoi'>
+    </form>
+<!--fin du formulaire-->
+
+<!--validation du nom-->
+    <script>
+        var formValid = document.getElementById('bouton_envoi');
+        var nom = document.getElementById('nom');
+        var missNom = document.getElementById('missNom');
+
+        formValid.addEventListener('click', validation);
+
+        function validation(event) {
+            //Si le champ est vide
+            if (nom.validity.valueMissing) {
+                event.preventDefault();
+                missNom.textContent = 'Nom manquant';
+                missNom.style.color = 'red';
+            }
+        }
+   
+    
+        var formValid = document.getElementById('bouton_envoi');
+        
+        var nom = document.getElementById('nom');
+        var missNom = document.getElementById('missNom');
+        var nomValid = /^[a-zA-ZéèîïÉÈÎÏ][a-zéèêàçîï]+([-'\s][a-zA-ZéèîïÉÈÎÏ][a-zéèêàçîï]+)?$/;
+
+        
+        var mail = document.getElementById('mail');
+        var missMail = document.getElementById('missMail');
+        var MailValid = /^[a-zA-ZéèîïÉÈÎÏ][a-zéèêàçîï]+([-'\s][a-zA-ZéèîïÉÈÎÏ][a-zéèêàçîï]+)?$/;
+
+        formValid.addEventListener('click', validation);
+
+        function validation(event) {
+            //Si le champ est vide
+            if (nom.validity.valueMissing) {
+                event.preventDefault();
+                missNom.textContent = 'Nom manquant';
+                missNom.style.color = 'red';
+                //Si le format de données est incorrect
+            } else if (nomValid.test(nom.value) == false) {
+                event.preventDefault();
+                missNom.textContent = 'Format incorrect';
+                missNom.style.color = 'orange';
+            } else {
+            }
+        }
+        function validation(event) {
+            //Si le champ est vide
+            if (mail.validity.valueMissing) {
+                event.preventDefault();
+                missMail.textContent = 'Mail manquant';
+                missMail.style.color = 'red';
+                //Si le format de données est incorrect
+            } else if (mailValid.test(mail.value) == false) {
+                event.preventDefault();
+                missMail.textContent = 'Format incorrect';
+                missMail.style.color = 'orange';
+            } else {
+            }
+        }
+        
+    </script>
+
+    <!--fin du regex-->
+</body>
+</html>

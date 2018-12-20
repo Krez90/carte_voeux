@@ -132,19 +132,19 @@ table {
 
 #flocon_x5F_grand, #flocon_x5F_grand_9_,  #flocon_x5F_grand_8_,  #flocon_x5F_grand_7_,  #flocon_x5F_grand_6_, #flocon_x5F_grand_5_, #flocon_x5F_grand_4_, #flocon_x5F_grand_3_, #flocon_x5F_grand_2_, #flocon_x5F_grand_1_{
 	will-change: transform;
-	animation: fall 25s infinite linear;
+	animation: fall 15s infinite linear;
 	
 }
 #flocon_x5F_moyen, #flocon_x5F_moyen_1_,#flocon_x5F_moyen_2_,#flocon_x5F_moyen_3_,#flocon_x5F_moyen_4_, #flocon_x5F_moyen_5_,#flocon_x5F_moyen_6_,#flocon_x5F_moyen_7_,#flocon_x5F_moyen_8_,#flocon_x5F_moyen_9_{
 	will-change: transform;
-	animation: fall 30s infinite linear;
+	animation: fall 20s infinite linear;
 	
 }
 #flocon_x5F_petit, #flocon_x5F_petit_1_, #flocon_x5F_petit_2_, #flocon_x5F_petit_3_, #flocon_x5F_petit_4_, #flocon_x5F_petit_5_, #flocon_x5F_petit_6_, 
 #flocon_x5F_petit_7_, #flocon_x5F_petit_8_, #flocon_x5F_petit_9_, #flocon_x5F_petit_10_, #flocon_x5F_petit_11_, #flocon_x5F_petit_12_,
 #flocon_x5F_petit_13_, #flocon_x5F_petit_14_, #flocon_x5F_petit_15_{
 	will-change: transform;
-	animation: fall 40s infinite linear;
+	animation: fall 30s infinite linear;
 	
 }
 #flocon_x5F_grand_6_{
@@ -285,4 +285,90 @@ table {
 #pere_x5F_noyel{
 	animation: perenoyel 70s infinite linear;
 	
+}
+
+/* 
+	@keyframes dim {
+		0% {box-shadow:5px 5px 50px 15px rgba(255, 255, 255, 0.6),-5px -5px 50px 15px rgba(255, 255, 255, 0.6)}
+		50% {box-shadow:5px 5px 50px 5px rgba(255, 255, 255, 0.6),-5px -5px 50px 5px rgba(255, 255, 255, 0.6)}
+		100% {box-shadow:5px 5px 50px 30px rgba(255, 255, 255, 0.6),-5px -5px 50px 30px rgba(255, 255, 255, 0.6)}
+	}
+
+	#SVGID_10_{
+		width: 80%;
+		position: relative;
+		margin: 15px auto;
+		height: auto;
+		line-height: 0;
+		animation: dim 10s infinite ease-in-out alternate;
+	} */
+
+/*debut du formulaire*/
+	form {
+		/* Uniquement centrer le formulaire sur la page */
+		margin: 0 auto;
+		width: 50%;
+				/* Encadré pour voir les limites du formulaire */
+		padding: 1em;
+		border: 1px solid #CCC;
+		border-radius: 1em;  
+	  }
+	  
+	  form div + div {
+		margin-top: 1em;
+	  }
+	  
+	  label {
+		/* Pour être sûrs que toutes les étiquettes ont même taille et sont correctement alignées */
+		display: inline-block;
+		text-align: center;
+	  }
+	  
+	  input, textarea {
+		/* Pour s'assurer que tous les champs texte ont la même police.
+		   Par défaut, les textarea ont une police monospace */
+		font: 1em sans-serif;
+		font-weight:bold;
+	
+	  
+		/* Pour que tous les champs texte aient la même dimension */
+		width: 70%;
+		box-sizing: border-box;
+		padding : 2px;
+		margin-bottom: 10px;
+	  
+		/* Pour harmoniser le look & feel des bordures des champs texte */
+		border: 1px solid #999;
+	  }
+	  
+	  input:focus, textarea:focus {
+		/* Pour souligner légèrement les éléments actifs */
+		border-color: #000;
+	  }
+	  
+	  textarea {
+		/* Pour aligner les champs texte multi‑ligne avec leur étiquette */
+		vertical-align: top;
+		
+	  
+		/* Pour donner assez de place pour écrire du texte */
+		height: 5em;
+	  }
+	  .form
+	  {
+		  color:white;
+		  font-family:'Indie Flower', cursive;
+		  font-weight: bold;
+		  font-size: 20px;
+		  margin-top: 10%;
+	  }
+	  #bouton_envoi{
+		  margin-left: 21.70%;
+	  }
+h1{
+	text-align: center;
+	padding-bottom: 10%;
+	margin-top: 10%;
+	font-size: 30px;
+
 }
