@@ -47,9 +47,59 @@ table {
 	border-collapse: collapse;
 	border-spacing: 0;
 }
-#Calque_1{
-border-top: 0;
+
+/*effet christmas*/
+@keyframes lettre {
+	100%{
+		transform: translatey(-10px);
+	}
 }
+.lettre_c{
+	animation: lettre 2s infinite linear;
+	animation-delay: 1s;
+}
+.lettre_h{
+	animation: lettre 2s infinite linear;
+	animation-delay: 0.5s;
+}
+.lettre_point_i{
+	animation: lettre 2s infinite linear;
+	animation-delay: 1.5s;
+}
+.lettre_i{
+	animation: lettre 2s infinite linear;
+	animation-delay: 2s;
+}
+.lettre_s{
+	animation: lettre 2s infinite linear;
+	animation-delay: 0.8s;
+}
+.lettre_t{
+	animation: lettre 2s infinite linear;
+	animation-delay: 1.2s;
+}
+.lettre_m{
+	animation: lettre 2s infinite linear;
+	animation-delay: 0.10s;
+}
+.lettre_a{
+	animation: lettre 2s infinite linear;
+	animation-delay: 0.30s;
+}
+.lettre_s{
+	animation: lettre 2s infinite linear;
+	animation-delay: 0.25s;
+}
+.lettre_element{
+	animation: lettre 2s infinite linear;
+	animation-delay: 0.11s;
+}
+.lettre_s_fin{
+	animation: lettre 2s infinite linear;
+	animation-delay: 1s;
+}
+ /*fin effet christmas*/
+
 
 #flocon_x5F_grand, #flocon_x5F_grand_9_, #flocon_x5F_grand_8_, #flocon_x5F_grand_7_,#flocon_x5F_grand_6_, #flocon_x5F_grand_5_, #flocon_x5F_grand_4_, #flocon_x5F_grand_3_, #flocon_x5F_grand_2_, #flocon_x5F_grand_1_,
 #flocon_x5F_moyen, #flocon_x5F_moyen_1_,#flocon_x5F_moyen_2_,#flocon_x5F_moyen_3_,#flocon_x5F_moyen_4_, #flocon_x5F_moyen_5_,#flocon_x5F_moyen_6_,#flocon_x5F_moyen_7_,#flocon_x5F_moyen_8_,#flocon_x5F_moyen_9_,
@@ -82,19 +132,19 @@ border-top: 0;
 
 #flocon_x5F_grand, #flocon_x5F_grand_9_,  #flocon_x5F_grand_8_,  #flocon_x5F_grand_7_,  #flocon_x5F_grand_6_, #flocon_x5F_grand_5_, #flocon_x5F_grand_4_, #flocon_x5F_grand_3_, #flocon_x5F_grand_2_, #flocon_x5F_grand_1_{
 	will-change: transform;
-	animation: fall 10s infinite linear;
+	animation: fall 25s infinite linear;
 	
 }
 #flocon_x5F_moyen, #flocon_x5F_moyen_1_,#flocon_x5F_moyen_2_,#flocon_x5F_moyen_3_,#flocon_x5F_moyen_4_, #flocon_x5F_moyen_5_,#flocon_x5F_moyen_6_,#flocon_x5F_moyen_7_,#flocon_x5F_moyen_8_,#flocon_x5F_moyen_9_{
 	will-change: transform;
-	animation: fall 12s infinite linear;
+	animation: fall 30s infinite linear;
 	
 }
 #flocon_x5F_petit, #flocon_x5F_petit_1_, #flocon_x5F_petit_2_, #flocon_x5F_petit_3_, #flocon_x5F_petit_4_, #flocon_x5F_petit_5_, #flocon_x5F_petit_6_, 
 #flocon_x5F_petit_7_, #flocon_x5F_petit_8_, #flocon_x5F_petit_9_, #flocon_x5F_petit_10_, #flocon_x5F_petit_11_, #flocon_x5F_petit_12_,
 #flocon_x5F_petit_13_, #flocon_x5F_petit_14_, #flocon_x5F_petit_15_{
 	will-change: transform;
-	animation: fall 14s infinite linear;
+	animation: fall 40s infinite linear;
 	
 }
 #flocon_x5F_grand_6_{
@@ -102,7 +152,7 @@ border-top: 0;
 }
 
 #flocon_x5F_grand_5_{
-	animation-delay: 1.5;
+	animation-delay: 1.5s;
 }
 
 #flocon_x5F_grand_4_{
@@ -126,7 +176,7 @@ border-top: 0;
 }
 
 #flocon_x5F_moyen_1_{
-	animation-delay: 1.5;
+	animation-delay: 1.5s;
 }
 
 #flocon_x5F_moyen_2_{
@@ -146,52 +196,52 @@ border-top: 0;
 
 /* debut flocon petit*/
 #flocon_x5F_petit{
-	animation-delay: 0.5s;
+	animation-delay: 4s;
 }
 #flocon_x5F_petit_1_{
-	animation-delay: 1s;
+	animation-delay: 3.5s;
 }
 #flocon_x5F_petit_2_{
-	animation-delay: 1.5s;
+	animation-delay: 3s;
 }
 #flocon_x5F_petit_3_{
-	animation-delay: 2s;
+	animation-delay: 10s;
 }
 #flocon_x5F_petit_4_{
-	animation-delay: 2.5s;
+	animation-delay: 8s;
 }
 #flocon_x5F_petit_5_{
-	animation-delay: 3s;
+	animation-delay: 5s;
 }
 #flocon_x5F_petit_6_{
 	animation-delay: 3.5s;
 }
 #flocon_x5F_petit_7_{
-	animation-delay: 0.7s;
+	animation-delay: 2.5s;
 }
 #flocon_x5F_petit_8_{
-	animation-delay: 1.14s;
+	animation-delay: 2s;
 }
 #flocon_x5F_petit_9_{
-	animation-delay: 2.10s;
+	animation-delay: 0.5s;
 }
 #flocon_x5F_petit_10_{
 	animation-delay: 2.8s;
 }
 #flocon_x5F_petit_11_{
-	animation-delay: 3.5s;
+	animation-delay: 15s;
 }
 #flocon_x5F_petit_12_{
-	animation-delay: 0.3s;
+	animation-delay: 13s;
 }
 #flocon_x5F_petit_13_{
-	animation-delay: 0.6s;
+	animation-delay:9s;
 }
 #flocon_x5F_petit_14_{
-	animation-delay: 0.9s;
+	animation-delay: 5s;
 }
 #flocon_x5F_petit_15_{
-	animation-delay: 1.20s;
+	animation-delay: 1s;
 }
 /*fin d'animation flocon*/
 
@@ -233,6 +283,6 @@ border-top: 0;
 	}
 }
 #pere_x5F_noyel{
-	animation: perenoyel 10s infinite linear;
+	animation: perenoyel 70s infinite linear;
 	
 }
