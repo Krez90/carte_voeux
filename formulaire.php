@@ -1,4 +1,49 @@
-<!doctype html>
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Formulaire</title>
+</head>
+<body>
+
+     <?php
+     
+//  echo htmlspecialchars ($_POST['nom']);
+//  if(!empty($_POST['nom'])) {
+//     echo 'Ok';
+
+// } else{
+//     echo "Manque le nom";
+// } 
+
+//  echo ($_POST['mail']);
+//  if(!empty($_POST['mail'])) {
+//      echo 'Ok';
+     
+// }   else{
+//          echo "Manque le mail";
+//      }
+
+//     $to = "bilel.h@codeur.online"; 
+//     $sub = "carte_voeux";
+//     $mess = $_POST['nom'] . $_POST['mail']; 
+  
+//     if(mail($to,$sub,$mess))  {
+//         echo "Votre mail a bien été envoyé"; 
+//     }
+//     else {
+//         echo "Votre mail n'a pas été envoyé veuillez rééssayer ."; 
+//     }
+
+$header="MIME-Version: 1.0\r\n";
+$header.='From: Bilel Hamimed <bilel.h@codeur.online>'."\n";
+$header.='Content-Type:text/html; charset="utf-8"'."/n";
+$header.='Content-Transfer-Encoding: 8bit';
+
+
+$message='<!doctype html>
 <html xmlns="http://www.w3.org/1999/xhtml" xmlns:v="urn:schemas-microsoft-com:vml" xmlns:o="urn:schemas-microsoft-com:office:office">
 
 <head>
@@ -129,7 +174,7 @@
                                                                 <tbody>
                                                                     <tr>
                                                                         <td style="width:500px;"><img alt="header image"
-                                                                                height="auto" src="image_carte_voeux.jpg"
+                                                                                height="auto" src="https://bilelh.promo-24.codeur.online/carte_voeux/image_carte_voeux.jpg"
                                                                                 style="border:0;display:block;outline:none;text-decoration:none;height:auto;width:100%;"
                                                                                 width="600"></td>
                                                                     </tr>
@@ -224,3 +269,9 @@
 </body>
 
 </html>
+';
+mail($_POST['mail'], "carte", $message, $header );
+echo $message;
+ ?>
+ 
+
