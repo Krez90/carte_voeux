@@ -9,33 +9,6 @@
 <body>
 
      <?php
-     
-//  echo htmlspecialchars ($_POST['nom']);
-//  if(!empty($_POST['nom'])) {
-//     echo 'Ok';
-
-// } else{
-//     echo "Manque le nom";
-// } 
-
-//  echo ($_POST['mail']);
-//  if(!empty($_POST['mail'])) {
-//      echo 'Ok';
-     
-// }   else{
-//          echo "Manque le mail";
-//      }
-
-//     $to = "bilel.h@codeur.online"; 
-//     $sub = "carte_voeux";
-//     $mess = $_POST['nom'] . $_POST['mail']; 
-  
-//     if(mail($to,$sub,$mess))  {
-//         echo "Votre mail a bien été envoyé"; 
-//     }
-//     else {
-//         echo "Votre mail n'a pas été envoyé veuillez rééssayer ."; 
-//     }
 
 $header="MIME-Version: 1.0\r\n";
 $header.='From: Bilel Hamimed <bilel.h@codeur.online>'."\n";
@@ -273,5 +246,3 @@ $message='<!doctype html>
 mail($_POST['mail'], "carte", $message, $header );
 echo $message;
  ?>
- 
-
